@@ -1,5 +1,3 @@
-# Crypto-HFT-ASIC
-
 # Crypto HFT ASIC Project
 
 ## Overview  
