@@ -8,23 +8,23 @@
 :vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
 :vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
 :vpi_module "C:\iverilog\lib\ivl\v2009.vpi";
-S_000002528dc22ed0 .scope package, "$unit" "$unit" 2 1;
+S_00000140dd842ed0 .scope package, "$unit" "$unit" 2 1;
  .timescale 0 0;
-S_000002528dc257e0 .scope module, "crypto_hft_system_tb" "crypto_hft_system_tb" 3 3;
+S_00000140dd8457e0 .scope module, "crypto_hft_system_tb" "crypto_hft_system_tb" 3 3;
  .timescale -9 -12;
-v000002528dc7e5d0_0 .var "clk_core", 0 0;
-v000002528dc7e2b0_0 .var "clk_net", 0 0;
-v000002528dc7dd10_0 .var "net_rx_data", 63 0;
-v000002528dc7f750_0 .var "net_rx_valid", 0 0;
-v000002528dc7e7b0_0 .net "net_tx_data", 63 0, v000002528dc7c9e0_0;  1 drivers
-v000002528dc7def0_0 .net "net_tx_valid", 0 0, v000002528dc7d480_0;  1 drivers
-v000002528dc7e850_0 .net "network_latency", 31 0, v000002528dc7cda0_0;  1 drivers
-v000002528dc7ef30_0 .var "rst_n", 0 0;
-v000002528dc7f610_0 .net "system_active", 0 0, L_000002528dc27a00;  1 drivers
-v000002528dc7f110_0 .net "total_latency", 31 0, L_000002528dc7ecb0;  1 drivers
-v000002528dc7de50_0 .net "trades_executed", 31 0, v000002528dc7d340_0;  1 drivers
-E_000002528dc19380 .event posedge, v000002528dadebd0_0;
-S_000002528dc25970 .scope module, "dut" "crypto_hft_asic_top" 3 13, 4 4 0, S_000002528dc257e0;
+v00000140dd89ea30_0 .var "clk_core", 0 0;
+v00000140dd89ee90_0 .var "clk_net", 0 0;
+v00000140dd89f390_0 .var "net_rx_data", 63 0;
+v00000140dd89f070_0 .var "net_rx_valid", 0 0;
+v00000140dd89f4d0_0 .net "net_tx_data", 63 0, v00000140dd89d5c0_0;  1 drivers
+v00000140dd89f1b0_0 .net "net_tx_valid", 0 0, v00000140dd89c940_0;  1 drivers
+v00000140dd89e7b0_0 .net "network_latency", 31 0, v00000140dd89d7a0_0;  1 drivers
+v00000140dd89edf0_0 .var "rst_n", 0 0;
+v00000140dd89e490_0 .net "system_active", 0 0, L_00000140dd848560;  1 drivers
+v00000140dd89d9f0_0 .net "total_latency", 31 0, L_00000140dd89e350;  1 drivers
+v00000140dd89dbd0_0 .net "trades_executed", 31 0, v00000140dd89d200_0;  1 drivers
+E_00000140dd839540 .event posedge, v00000140dd7cebd0_0;
+S_00000140dd845970 .scope module, "dut" "crypto_hft_asic_top" 3 13, 4 4 0, S_00000140dd8457e0;
  .timescale -9 -12;
     .port_info 0 /INPUT 1 "clk_core";
     .port_info 1 /INPUT 1 "clk_net";
@@ -37,27 +37,27 @@ S_000002528dc25970 .scope module, "dut" "crypto_hft_asic_top" 3 13, 4 4 0, S_000
     .port_info 8 /OUTPUT 32 "total_latency";
     .port_info 9 /OUTPUT 32 "trades_executed";
     .port_info 10 /OUTPUT 1 "system_active";
-L_000002528dc27a00 .functor BUFZ 1, v000002528dc7c8a0_0, C4<0>, C4<0>, C4<0>;
-L_000002528dcb0088 .functor BUFT 1, C4<00000000000000000000000000000001>, C4<0>, C4<0>, C4<0>;
-v000002528dc7cd00_0 .net/2u *"_ivl_0", 31 0, L_000002528dcb0088;  1 drivers
-v000002528dc7ce40_0 .net "btc_price_internal", 63 0, v000002528dc25b00_0;  1 drivers
-v000002528dc7d020_0 .net "clk_core", 0 0, v000002528dc7e5d0_0;  1 drivers
-v000002528dc7d160_0 .net "clk_net", 0 0, v000002528dc7e2b0_0;  1 drivers
-v000002528dc7f2f0_0 .net "eth_price_internal", 63 0, v000002528dadedb0_0;  1 drivers
-v000002528dc7db30_0 .net "net_rx_data", 63 0, v000002528dc7dd10_0;  1 drivers
-v000002528dc7dbd0_0 .net "net_rx_valid", 0 0, v000002528dc7f750_0;  1 drivers
-v000002528dc7ea30_0 .net "net_tx_data", 63 0, v000002528dc7c9e0_0;  alias, 1 drivers
-v000002528dc7e530_0 .net "net_tx_valid", 0 0, v000002528dc7d480_0;  alias, 1 drivers
-v000002528dc7da90_0 .net "network_latency", 31 0, v000002528dc7cda0_0;  alias, 1 drivers
-v000002528dc7ddb0_0 .net "price_update_internal", 0 0, v000002528dc7c8a0_0;  1 drivers
-v000002528dc7f570_0 .net "rst_n", 0 0, v000002528dc7ef30_0;  1 drivers
-v000002528dc7eb70_0 .net "system_active", 0 0, L_000002528dc27a00;  alias, 1 drivers
-v000002528dc7ec10_0 .net "total_latency", 31 0, L_000002528dc7ecb0;  alias, 1 drivers
-v000002528dc7dc70_0 .net "trade_price_internal", 63 0, v000002528dc7cf80_0;  1 drivers
-v000002528dc7ee90_0 .net "trade_trigger_internal", 0 0, v000002528dc7cbc0_0;  1 drivers
-v000002528dc7e990_0 .net "trades_executed", 31 0, v000002528dc7d340_0;  alias, 1 drivers
-L_000002528dc7ecb0 .arith/sum 32, v000002528dc7cda0_0, L_000002528dcb0088;
-S_000002528dadea40 .scope module, "net_if" "network_interface" 4 30, 5 4 0, S_000002528dc25970;
+L_00000140dd848560 .functor BUFZ 1, v00000140dd89d0c0_0, C4<0>, C4<0>, C4<0>;
+L_00000140dd8d0088 .functor BUFT 1, C4<00000000000000000000000000000001>, C4<0>, C4<0>, C4<0>;
+v00000140dd89d700_0 .net/2u *"_ivl_0", 31 0, L_00000140dd8d0088;  1 drivers
+v00000140dd89d340_0 .net "btc_price_internal", 63 0, v00000140dd845b00_0;  1 drivers
+v00000140dd89d480_0 .net "clk_core", 0 0, v00000140dd89ea30_0;  1 drivers
+v00000140dd89d660_0 .net "clk_net", 0 0, v00000140dd89ee90_0;  1 drivers
+v00000140dd89f250_0 .net "eth_price_internal", 63 0, v00000140dd7cedb0_0;  1 drivers
+v00000140dd89ed50_0 .net "net_rx_data", 63 0, v00000140dd89f390_0;  1 drivers
+v00000140dd89dc70_0 .net "net_rx_valid", 0 0, v00000140dd89f070_0;  1 drivers
+v00000140dd89ecb0_0 .net "net_tx_data", 63 0, v00000140dd89d5c0_0;  alias, 1 drivers
+v00000140dd89e710_0 .net "net_tx_valid", 0 0, v00000140dd89c940_0;  alias, 1 drivers
+v00000140dd89efd0_0 .net "network_latency", 31 0, v00000140dd89d7a0_0;  alias, 1 drivers
+v00000140dd89d8b0_0 .net "price_update_internal", 0 0, v00000140dd89d0c0_0;  1 drivers
+v00000140dd89e170_0 .net "rst_n", 0 0, v00000140dd89edf0_0;  1 drivers
+v00000140dd89da90_0 .net "system_active", 0 0, L_00000140dd848560;  alias, 1 drivers
+v00000140dd89db30_0 .net "total_latency", 31 0, L_00000140dd89e350;  alias, 1 drivers
+v00000140dd89d950_0 .net "trade_price_internal", 63 0, v00000140dd89d020_0;  1 drivers
+v00000140dd89e670_0 .net "trade_trigger_internal", 0 0, v00000140dd89d2a0_0;  1 drivers
+v00000140dd89f610_0 .net "trades_executed", 31 0, v00000140dd89d200_0;  alias, 1 drivers
+L_00000140dd89e350 .arith/sum 32, v00000140dd89d7a0_0, L_00000140dd8d0088;
+S_00000140dd7cea40 .scope module, "net_if" "network_interface" 4 30, 5 4 0, S_00000140dd845970;
  .timescale -9 -12;
     .port_info 0 /INPUT 1 "clk_156mhz";
     .port_info 1 /INPUT 1 "clk_core";
@@ -73,40 +73,40 @@ S_000002528dadea40 .scope module, "net_if" "network_interface" 4 30, 5 4 0, S_00
     .port_info 11 /INPUT 64 "trade_price";
     .port_info 12 /OUTPUT 32 "network_latency";
     .port_info 13 /OUTPUT 32 "total_packets";
-enum000002528dc14e90 .enum4 (3)
+enum00000140dd834e90 .enum4 (3)
    "IDLE" 3'b000,
    "PARSE_HEADER" 3'b001,
    "EXTRACT_BTC" 3'b010,
    "EXTRACT_ETH" 3'b011,
    "SEND_ORDER" 3'b100
  ;
-v000002528dc25b00_0 .var "btc_price", 63 0;
-v000002528dc0b550_0 .var "btc_price_sync", 63 0;
-v000002528dadebd0_0 .net "clk_156mhz", 0 0, v000002528dc7e2b0_0;  alias, 1 drivers
-v000002528dadec70_0 .net "clk_core", 0 0, v000002528dc7e5d0_0;  alias, 1 drivers
-v000002528daded10_0 .var "current_state", 2 0;
-v000002528dadedb0_0 .var "eth_price", 63 0;
-v000002528dadee50_0 .var "eth_price_sync", 63 0;
-v000002528dc7d520_0 .var "latency_counter", 31 0;
-v000002528dc7cda0_0 .var "network_latency", 31 0;
-v000002528dc7cee0_0 .var "next_state", 2 0;
-v000002528dc7d2a0_0 .var "packet_buffer", 63 0;
-v000002528dc7d660_0 .var "parse_counter", 15 0;
-v000002528dc7c8a0_0 .var "price_update", 0 0;
-v000002528dc7d200_0 .var "price_update_sync", 0 0;
-v000002528dc7d5c0_0 .net "rst_n", 0 0, v000002528dc7ef30_0;  alias, 1 drivers
-v000002528dc7c940_0 .net "rx_data", 63 0, v000002528dc7dd10_0;  alias, 1 drivers
-v000002528dc7d700_0 .net "rx_valid", 0 0, v000002528dc7f750_0;  alias, 1 drivers
-v000002528dc7d340_0 .var "total_packets", 31 0;
-v000002528dc7d0c0_0 .net "trade_price", 63 0, v000002528dc7cf80_0;  alias, 1 drivers
-v000002528dc7d3e0_0 .net "trade_trigger", 0 0, v000002528dc7cbc0_0;  alias, 1 drivers
-v000002528dc7c9e0_0 .var "tx_data", 63 0;
-v000002528dc7d480_0 .var "tx_valid", 0 0;
-E_000002528dc19680 .event anyedge, v000002528daded10_0, v000002528dc7d700_0, v000002528dc7d660_0;
-E_000002528dc199c0/0 .event negedge, v000002528dc7d5c0_0;
-E_000002528dc199c0/1 .event posedge, v000002528dadebd0_0;
-E_000002528dc199c0 .event/or E_000002528dc199c0/0, E_000002528dc199c0/1;
-S_000002528dc289c0 .scope module, "trading_engine" "crypto_trading_core" 4 48, 6 4 0, S_000002528dc25970;
+v00000140dd845b00_0 .var "btc_price", 63 0;
+v00000140dd82b550_0 .var "btc_price_sync", 63 0;
+v00000140dd7cebd0_0 .net "clk_156mhz", 0 0, v00000140dd89ee90_0;  alias, 1 drivers
+v00000140dd7cec70_0 .net "clk_core", 0 0, v00000140dd89ea30_0;  alias, 1 drivers
+v00000140dd7ced10_0 .var "current_state", 2 0;
+v00000140dd7cedb0_0 .var "eth_price", 63 0;
+v00000140dd7cee50_0 .var "eth_price_sync", 63 0;
+v00000140dd89cda0_0 .var "latency_counter", 31 0;
+v00000140dd89d7a0_0 .var "network_latency", 31 0;
+v00000140dd89ca80_0 .var "next_state", 2 0;
+v00000140dd89c8a0_0 .var "packet_buffer", 63 0;
+v00000140dd89c9e0_0 .var "parse_counter", 15 0;
+v00000140dd89d0c0_0 .var "price_update", 0 0;
+v00000140dd89cf80_0 .var "price_update_sync", 0 0;
+v00000140dd89d520_0 .net "rst_n", 0 0, v00000140dd89edf0_0;  alias, 1 drivers
+v00000140dd89d3e0_0 .net "rx_data", 63 0, v00000140dd89f390_0;  alias, 1 drivers
+v00000140dd89d160_0 .net "rx_valid", 0 0, v00000140dd89f070_0;  alias, 1 drivers
+v00000140dd89d200_0 .var "total_packets", 31 0;
+v00000140dd89ce40_0 .net "trade_price", 63 0, v00000140dd89d020_0;  alias, 1 drivers
+v00000140dd89cb20_0 .net "trade_trigger", 0 0, v00000140dd89d2a0_0;  alias, 1 drivers
+v00000140dd89d5c0_0 .var "tx_data", 63 0;
+v00000140dd89c940_0 .var "tx_valid", 0 0;
+E_00000140dd839740 .event anyedge, v00000140dd7ced10_0, v00000140dd89d160_0, v00000140dd89c9e0_0;
+E_00000140dd839900/0 .event negedge, v00000140dd89d520_0;
+E_00000140dd839900/1 .event posedge, v00000140dd7cebd0_0;
+E_00000140dd839900 .event/or E_00000140dd839900/0, E_00000140dd839900/1;
+S_00000140dd8489c0 .scope module, "trading_engine" "crypto_trading_core" 4 48, 6 4 0, S_00000140dd845970;
  .timescale -9 -12;
     .port_info 0 /INPUT 1 "clk";
     .port_info 1 /INPUT 1 "rst_n";
@@ -114,43 +114,43 @@ S_000002528dc289c0 .scope module, "trading_engine" "crypto_trading_core" 4 48, 6
     .port_info 3 /INPUT 64 "eth_price";
     .port_info 4 /OUTPUT 1 "trade_trigger";
     .port_info 5 /OUTPUT 64 "trade_price";
-v000002528dc7d7a0_0 .net "btc_price", 63 0, v000002528dc25b00_0;  alias, 1 drivers
-v000002528dc7cc60_0 .net "clk", 0 0, v000002528dc7e5d0_0;  alias, 1 drivers
-v000002528dc7ca80_0 .net "eth_price", 63 0, v000002528dadedb0_0;  alias, 1 drivers
-v000002528dc7cb20_0 .net "rst_n", 0 0, v000002528dc7ef30_0;  alias, 1 drivers
-v000002528dc7cf80_0 .var "trade_price", 63 0;
-v000002528dc7cbc0_0 .var "trade_trigger", 0 0;
-E_000002528dc1a400/0 .event negedge, v000002528dc7d5c0_0;
-E_000002528dc1a400/1 .event posedge, v000002528dadec70_0;
-E_000002528dc1a400 .event/or E_000002528dc1a400/0, E_000002528dc1a400/1;
-    .scope S_000002528dadea40;
+v00000140dd89cd00_0 .net "btc_price", 63 0, v00000140dd845b00_0;  alias, 1 drivers
+v00000140dd89cbc0_0 .net "clk", 0 0, v00000140dd89ea30_0;  alias, 1 drivers
+v00000140dd89cee0_0 .net "eth_price", 63 0, v00000140dd7cedb0_0;  alias, 1 drivers
+v00000140dd89cc60_0 .net "rst_n", 0 0, v00000140dd89edf0_0;  alias, 1 drivers
+v00000140dd89d020_0 .var "trade_price", 63 0;
+v00000140dd89d2a0_0 .var "trade_trigger", 0 0;
+E_00000140dd83ac80/0 .event negedge, v00000140dd89d520_0;
+E_00000140dd83ac80/1 .event posedge, v00000140dd7cec70_0;
+E_00000140dd83ac80 .event/or E_00000140dd83ac80/0, E_00000140dd83ac80/1;
+    .scope S_00000140dd7cea40;
 T_0 ;
-    %wait E_000002528dc199c0;
-    %load/vec4 v000002528dc7d5c0_0;
+    %wait E_00000140dd839900;
+    %load/vec4 v00000140dd89d520_0;
     %nor/r;
     %flag_set/vec4 8;
     %jmp/0xz  T_0.0, 8;
     %pushi/vec4 0, 0, 3;
-    %assign/vec4 v000002528daded10_0, 0;
+    %assign/vec4 v00000140dd7ced10_0, 0;
     %pushi/vec4 0, 0, 64;
-    %assign/vec4 v000002528dc25b00_0, 0;
+    %assign/vec4 v00000140dd845b00_0, 0;
     %pushi/vec4 0, 0, 64;
-    %assign/vec4 v000002528dadedb0_0, 0;
+    %assign/vec4 v00000140dd7cedb0_0, 0;
     %pushi/vec4 0, 0, 1;
-    %assign/vec4 v000002528dc7c8a0_0, 0;
+    %assign/vec4 v00000140dd89d0c0_0, 0;
     %pushi/vec4 0, 0, 16;
-    %assign/vec4 v000002528dc7d660_0, 0;
+    %assign/vec4 v00000140dd89c9e0_0, 0;
     %pushi/vec4 0, 0, 32;
-    %assign/vec4 v000002528dc7d340_0, 0;
+    %assign/vec4 v00000140dd89d200_0, 0;
     %pushi/vec4 0, 0, 32;
-    %assign/vec4 v000002528dc7cda0_0, 0;
+    %assign/vec4 v00000140dd89d7a0_0, 0;
     %pushi/vec4 0, 0, 32;
-    %assign/vec4 v000002528dc7d520_0, 0;
+    %assign/vec4 v00000140dd89cda0_0, 0;
     %jmp T_0.1;
 T_0.0 ;
-    %load/vec4 v000002528dc7cee0_0;
-    %assign/vec4 v000002528daded10_0, 0;
-    %load/vec4 v000002528daded10_0;
+    %load/vec4 v00000140dd89ca80_0;
+    %assign/vec4 v00000140dd7ced10_0, 0;
+    %load/vec4 v00000140dd7ced10_0;
     %dup/vec4;
     %pushi/vec4 0, 0, 3;
     %cmp/u;
@@ -174,73 +174,73 @@ T_0.0 ;
     %jmp T_0.7;
 T_0.2 ;
     %pushi/vec4 0, 0, 1;
-    %assign/vec4 v000002528dc7c8a0_0, 0;
-    %load/vec4 v000002528dc7d700_0;
+    %assign/vec4 v00000140dd89d0c0_0, 0;
+    %load/vec4 v00000140dd89d160_0;
     %flag_set/vec4 8;
     %jmp/0xz  T_0.8, 8;
-    %load/vec4 v000002528dc7c940_0;
-    %assign/vec4 v000002528dc7d2a0_0, 0;
+    %load/vec4 v00000140dd89d3e0_0;
+    %assign/vec4 v00000140dd89c8a0_0, 0;
     %pushi/vec4 1, 0, 16;
-    %assign/vec4 v000002528dc7d660_0, 0;
+    %assign/vec4 v00000140dd89c9e0_0, 0;
     %pushi/vec4 1, 0, 32;
-    %assign/vec4 v000002528dc7d520_0, 0;
-    %load/vec4 v000002528dc7d340_0;
+    %assign/vec4 v00000140dd89cda0_0, 0;
+    %load/vec4 v00000140dd89d200_0;
     %addi 1, 0, 32;
-    %assign/vec4 v000002528dc7d340_0, 0;
+    %assign/vec4 v00000140dd89d200_0, 0;
 T_0.8 ;
     %jmp T_0.7;
 T_0.3 ;
-    %load/vec4 v000002528dc7d660_0;
+    %load/vec4 v00000140dd89c9e0_0;
     %addi 1, 0, 16;
-    %assign/vec4 v000002528dc7d660_0, 0;
-    %load/vec4 v000002528dc7d660_0;
+    %assign/vec4 v00000140dd89c9e0_0, 0;
+    %load/vec4 v00000140dd89c9e0_0;
     %cmpi/e 2, 0, 16;
     %jmp/0xz  T_0.10, 4;
-    %load/vec4 v000002528dc7c940_0;
+    %load/vec4 v00000140dd89d3e0_0;
     %parti/s 32, 0, 2;
     %concati/vec4 0, 0, 32;
-    %assign/vec4 v000002528dc25b00_0, 0;
+    %assign/vec4 v00000140dd845b00_0, 0;
 T_0.10 ;
     %jmp T_0.7;
 T_0.4 ;
-    %load/vec4 v000002528dc7d660_0;
+    %load/vec4 v00000140dd89c9e0_0;
     %addi 1, 0, 16;
-    %assign/vec4 v000002528dc7d660_0, 0;
-    %load/vec4 v000002528dc25b00_0;
-    %assign/vec4 v000002528dc0b550_0, 0;
+    %assign/vec4 v00000140dd89c9e0_0, 0;
+    %load/vec4 v00000140dd845b00_0;
+    %assign/vec4 v00000140dd82b550_0, 0;
     %jmp T_0.7;
 T_0.5 ;
-    %load/vec4 v000002528dc7d660_0;
+    %load/vec4 v00000140dd89c9e0_0;
     %addi 1, 0, 16;
-    %assign/vec4 v000002528dc7d660_0, 0;
-    %load/vec4 v000002528dc7c940_0;
+    %assign/vec4 v00000140dd89c9e0_0, 0;
+    %load/vec4 v00000140dd89d3e0_0;
     %parti/s 32, 16, 6;
     %concati/vec4 0, 0, 32;
-    %assign/vec4 v000002528dadedb0_0, 0;
-    %load/vec4 v000002528dadedb0_0;
-    %assign/vec4 v000002528dadee50_0, 0;
+    %assign/vec4 v00000140dd7cedb0_0, 0;
+    %load/vec4 v00000140dd7cedb0_0;
+    %assign/vec4 v00000140dd7cee50_0, 0;
     %pushi/vec4 1, 0, 1;
-    %assign/vec4 v000002528dc7c8a0_0, 0;
+    %assign/vec4 v00000140dd89d0c0_0, 0;
     %pushi/vec4 1, 0, 1;
-    %assign/vec4 v000002528dc7d200_0, 0;
-    %load/vec4 v000002528dc7d520_0;
-    %assign/vec4 v000002528dc7cda0_0, 0;
+    %assign/vec4 v00000140dd89cf80_0, 0;
+    %load/vec4 v00000140dd89cda0_0;
+    %assign/vec4 v00000140dd89d7a0_0, 0;
     %jmp T_0.7;
 T_0.6 ;
-    %load/vec4 v000002528dc7d3e0_0;
+    %load/vec4 v00000140dd89cb20_0;
     %flag_set/vec4 8;
     %jmp/0xz  T_0.12, 8;
     %pushi/vec4 3735928559, 0, 32;
-    %load/vec4 v000002528dc7d0c0_0;
+    %load/vec4 v00000140dd89ce40_0;
     %parti/s 32, 32, 7;
     %concat/vec4; draw_concat_vec4
-    %assign/vec4 v000002528dc7c9e0_0, 0;
+    %assign/vec4 v00000140dd89d5c0_0, 0;
     %pushi/vec4 1, 0, 1;
-    %assign/vec4 v000002528dc7d480_0, 0;
+    %assign/vec4 v00000140dd89c940_0, 0;
     %jmp T_0.13;
 T_0.12 ;
     %pushi/vec4 0, 0, 1;
-    %assign/vec4 v000002528dc7d480_0, 0;
+    %assign/vec4 v00000140dd89c940_0, 0;
 T_0.13 ;
     %jmp T_0.7;
 T_0.7 ;
@@ -248,13 +248,13 @@ T_0.7 ;
 T_0.1 ;
     %jmp T_0;
     .thread T_0;
-    .scope S_000002528dadea40;
+    .scope S_00000140dd7cea40;
 T_1 ;
-Ewait_0 .event/or E_000002528dc19680, E_0x0;
+Ewait_0 .event/or E_00000140dd839740, E_0x0;
     %wait Ewait_0;
-    %load/vec4 v000002528daded10_0;
-    %store/vec4 v000002528dc7cee0_0, 0, 3;
-    %load/vec4 v000002528daded10_0;
+    %load/vec4 v00000140dd7ced10_0;
+    %store/vec4 v00000140dd89ca80_0, 0, 3;
+    %load/vec4 v00000140dd7ced10_0;
     %dup/vec4;
     %pushi/vec4 0, 0, 3;
     %cmp/u;
@@ -276,138 +276,138 @@ Ewait_0 .event/or E_000002528dc19680, E_0x0;
     %cmp/u;
     %jmp/1 T_1.4, 6;
     %pushi/vec4 0, 0, 3;
-    %store/vec4 v000002528dc7cee0_0, 0, 3;
+    %store/vec4 v00000140dd89ca80_0, 0, 3;
     %jmp T_1.6;
 T_1.0 ;
-    %load/vec4 v000002528dc7d700_0;
+    %load/vec4 v00000140dd89d160_0;
     %flag_set/vec4 8;
     %jmp/0xz  T_1.7, 8;
     %pushi/vec4 1, 0, 3;
-    %store/vec4 v000002528dc7cee0_0, 0, 3;
+    %store/vec4 v00000140dd89ca80_0, 0, 3;
 T_1.7 ;
     %jmp T_1.6;
 T_1.1 ;
-    %load/vec4 v000002528dc7d660_0;
+    %load/vec4 v00000140dd89c9e0_0;
     %cmpi/u 2, 0, 16;
     %flag_inv 5; GE is !LT
     %jmp/0xz  T_1.9, 5;
     %pushi/vec4 2, 0, 3;
-    %store/vec4 v000002528dc7cee0_0, 0, 3;
+    %store/vec4 v00000140dd89ca80_0, 0, 3;
 T_1.9 ;
     %jmp T_1.6;
 T_1.2 ;
     %pushi/vec4 3, 0, 3;
-    %store/vec4 v000002528dc7cee0_0, 0, 3;
+    %store/vec4 v00000140dd89ca80_0, 0, 3;
     %jmp T_1.6;
 T_1.3 ;
     %pushi/vec4 4, 0, 3;
-    %store/vec4 v000002528dc7cee0_0, 0, 3;
+    %store/vec4 v00000140dd89ca80_0, 0, 3;
     %jmp T_1.6;
 T_1.4 ;
     %pushi/vec4 0, 0, 3;
-    %store/vec4 v000002528dc7cee0_0, 0, 3;
+    %store/vec4 v00000140dd89ca80_0, 0, 3;
     %jmp T_1.6;
 T_1.6 ;
     %pop/vec4 1;
     %jmp T_1;
     .thread T_1, $push;
-    .scope S_000002528dc289c0;
+    .scope S_00000140dd8489c0;
 T_2 ;
-    %wait E_000002528dc1a400;
-    %load/vec4 v000002528dc7cb20_0;
+    %wait E_00000140dd83ac80;
+    %load/vec4 v00000140dd89cc60_0;
     %nor/r;
     %flag_set/vec4 8;
     %jmp/0xz  T_2.0, 8;
     %pushi/vec4 0, 0, 1;
-    %assign/vec4 v000002528dc7cbc0_0, 0;
+    %assign/vec4 v00000140dd89d2a0_0, 0;
     %pushi/vec4 0, 0, 64;
-    %assign/vec4 v000002528dc7cf80_0, 0;
+    %assign/vec4 v00000140dd89d020_0, 0;
     %jmp T_2.1;
 T_2.0 ;
-    %load/vec4 v000002528dc7ca80_0;
+    %load/vec4 v00000140dd89cee0_0;
     %ix/load 4, 4, 0;
     %flag_set/imm 4, 0;
     %shiftl 4;
-    %load/vec4 v000002528dc7d7a0_0;
+    %load/vec4 v00000140dd89cd00_0;
     %cmp/u;
     %jmp/0xz  T_2.2, 5;
     %pushi/vec4 1, 0, 1;
-    %assign/vec4 v000002528dc7cbc0_0, 0;
-    %load/vec4 v000002528dc7ca80_0;
-    %assign/vec4 v000002528dc7cf80_0, 0;
+    %assign/vec4 v00000140dd89d2a0_0, 0;
+    %load/vec4 v00000140dd89cee0_0;
+    %assign/vec4 v00000140dd89d020_0, 0;
     %jmp T_2.3;
 T_2.2 ;
     %pushi/vec4 0, 0, 1;
-    %assign/vec4 v000002528dc7cbc0_0, 0;
+    %assign/vec4 v00000140dd89d2a0_0, 0;
     %pushi/vec4 0, 0, 64;
-    %assign/vec4 v000002528dc7cf80_0, 0;
+    %assign/vec4 v00000140dd89d020_0, 0;
 T_2.3 ;
 T_2.1 ;
     %jmp T_2;
     .thread T_2;
-    .scope S_000002528dc257e0;
+    .scope S_00000140dd8457e0;
 T_3 ;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002528dc7e5d0_0, 0, 1;
+    %store/vec4 v00000140dd89ea30_0, 0, 1;
 T_3.0 ;
     %delay 250, 0;
-    %load/vec4 v000002528dc7e5d0_0;
+    %load/vec4 v00000140dd89ea30_0;
     %inv;
-    %store/vec4 v000002528dc7e5d0_0, 0, 1;
+    %store/vec4 v00000140dd89ea30_0, 0, 1;
     %jmp T_3.0;
     %end;
     .thread T_3;
-    .scope S_000002528dc257e0;
+    .scope S_00000140dd8457e0;
 T_4 ;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002528dc7e2b0_0, 0, 1;
+    %store/vec4 v00000140dd89ee90_0, 0, 1;
 T_4.0 ;
     %delay 3200, 0;
-    %load/vec4 v000002528dc7e2b0_0;
+    %load/vec4 v00000140dd89ee90_0;
     %inv;
-    %store/vec4 v000002528dc7e2b0_0, 0, 1;
+    %store/vec4 v00000140dd89ee90_0, 0, 1;
     %jmp T_4.0;
     %end;
     .thread T_4;
-    .scope S_000002528dc257e0;
+    .scope S_00000140dd8457e0;
 T_5 ;
     %vpi_call/w 3 40 "$dumpfile", "crypto_hft_system.vcd" {0 0 0};
-    %vpi_call/w 3 41 "$dumpvars", 32'sb00000000000000000000000000000000, S_000002528dc257e0 {0 0 0};
+    %vpi_call/w 3 41 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000140dd8457e0 {0 0 0};
     %end;
     .thread T_5;
-    .scope S_000002528dc257e0;
+    .scope S_00000140dd8457e0;
 T_6 ;
     %vpi_call/w 3 46 "$display", "=== CRYPTO HFT ASIC SYSTEM SIMULATION ===" {0 0 0};
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002528dc7ef30_0, 0, 1;
+    %store/vec4 v00000140dd89edf0_0, 0, 1;
     %pushi/vec4 0, 0, 64;
-    %store/vec4 v000002528dc7dd10_0, 0, 64;
+    %store/vec4 v00000140dd89f390_0, 0, 64;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002528dc7f750_0, 0, 1;
+    %store/vec4 v00000140dd89f070_0, 0, 1;
     %delay 100000, 0;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v000002528dc7ef30_0, 0, 1;
+    %store/vec4 v00000140dd89edf0_0, 0, 1;
     %vpi_call/w 3 55 "$display", "Sending market data packet..." {0 0 0};
     %pushi/vec4 2443359173, 0, 35;
     %concati/vec4 146800640, 0, 29;
-    %store/vec4 v000002528dc7dd10_0, 0, 64;
+    %store/vec4 v00000140dd89f390_0, 0, 64;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v000002528dc7f750_0, 0, 1;
+    %store/vec4 v00000140dd89f070_0, 0, 1;
     %delay 6400, 0;
     %pushi/vec4 2596069104, 0, 32;
     %concati/vec4 167772160, 0, 32;
-    %store/vec4 v000002528dc7dd10_0, 0, 64;
+    %store/vec4 v00000140dd89f390_0, 0, 64;
     %delay 6400, 0;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v000002528dc7f750_0, 0, 1;
+    %store/vec4 v00000140dd89f070_0, 0, 1;
     %delay 200000, 0;
-    %load/vec4 v000002528dc7def0_0;
+    %load/vec4 v00000140dd89f1b0_0;
     %flag_set/vec4 8;
     %jmp/0xz  T_6.0, 8;
     %vpi_call/w 3 69 "$display", "\342\234\205 SUCCESS: Order transmitted" {0 0 0};
-    %vpi_call/w 3 70 "$display", "   Network Latency: %d cycles", v000002528dc7e850_0 {0 0 0};
-    %vpi_call/w 3 71 "$display", "   Total Latency: %d cycles", v000002528dc7f110_0 {0 0 0};
-    %vpi_call/w 3 72 "$display", "   Total Trades: %d", v000002528dc7de50_0 {0 0 0};
+    %vpi_call/w 3 70 "$display", "   Network Latency: %d cycles", v00000140dd89e7b0_0 {0 0 0};
+    %vpi_call/w 3 71 "$display", "   Total Latency: %d cycles", v00000140dd89d9f0_0 {0 0 0};
+    %vpi_call/w 3 72 "$display", "   Total Trades: %d", v00000140dd89dbd0_0 {0 0 0};
     %jmp T_6.1;
 T_6.0 ;
     %vpi_call/w 3 74 "$display", "\342\235\214 FAILED: No order generated" {0 0 0};
@@ -417,18 +417,18 @@ T_6.1 ;
     %vpi_call/w 3 79 "$finish" {0 0 0};
     %end;
     .thread T_6;
-    .scope S_000002528dc257e0;
+    .scope S_00000140dd8457e0;
 T_7 ;
-    %wait E_000002528dc19380;
-    %load/vec4 v000002528dc7def0_0;
+    %wait E_00000140dd839540;
+    %load/vec4 v00000140dd89f1b0_0;
     %flag_set/vec4 8;
     %jmp/0xz  T_7.0, 8;
-    %vpi_call/w 3 85 "$display", "Time %t: ORDER SENT - Data: %h", $time, v000002528dc7e7b0_0 {0 0 0};
+    %vpi_call/w 3 85 "$display", "Time %t: ORDER SENT - Data: %h", $time, v00000140dd89f4d0_0 {0 0 0};
 T_7.0 ;
-    %load/vec4 v000002528dc7f610_0;
+    %load/vec4 v00000140dd89e490_0;
     %flag_set/vec4 8;
     %jmp/0xz  T_7.2, 8;
-    %vpi_call/w 3 88 "$display", "Time %t: SYSTEM PROCESSING - Total Latency: %d cycles", $time, v000002528dc7f110_0 {0 0 0};
+    %vpi_call/w 3 88 "$display", "Time %t: SYSTEM PROCESSING - Total Latency: %d cycles", $time, v00000140dd89d9f0_0 {0 0 0};
 T_7.2 ;
     %jmp T_7;
     .thread T_7;
@@ -437,7 +437,7 @@ T_7.2 ;
     "N/A";
     "<interactive>";
     "-";
-    "verification/crypto_hft_system_tb.sv";
-    "rtl/crypto_hft_top.sv";
-    "rtl/network_interface.sv";
-    "rtl/crypto_trading_core.sv";
+    "verification\crypto_hft_system_tb.sv";
+    "rtl\crypto_hft_top.sv";
+    "rtl\network_interface.sv";
+    "rtl\crypto_trading_core.sv";
